@@ -1,14 +1,14 @@
-name: Deploy HTML Website
+name: HTML Website
 
 on:
   push:
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Deploy
-        run: echo "Website deployed successfully!"
+      - name: Check HTML files
+        run: |
+          echo "HTML website is ready!"
+          ls
